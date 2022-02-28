@@ -6,7 +6,7 @@ import Devloper from '/public/devloper.png'
 
 function About() {
   return (
-    <div>
+    <section id='About_me'>
       <div className=" flex flex-col items-center ">
         <span className=" text-6xl font-medium text-blx-900">About Me</span>
         <span className=" text-xl text-gray-600 font-sans text-center mt-5">
@@ -60,7 +60,7 @@ function About() {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

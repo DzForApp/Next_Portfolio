@@ -10,7 +10,7 @@ function ContactMe() {
 
 
   return (
-    <div>
+    <section id='Contact_me'> 
       <div className=" flex flex-col items-center  ">
         <span className=" text-6xl font-medium text-blx-900">ContactMe</span>
         <span className=" text-xl text-gray-600 font-sans text-center mt-5">
@@ -52,7 +52,7 @@ function ContactMe() {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

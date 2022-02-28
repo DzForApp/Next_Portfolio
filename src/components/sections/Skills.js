@@ -5,7 +5,7 @@ function Skills() {
   
    
   return (
-    <div>
+    <section id='Skills'>
       <div className=" flex flex-col items-center ">
         <span className=" text-6xl font-medium text-blx-900">Skills</span>
         <span className=" text-xl text-gray-600 font-sans text-center mt-5">
@@ -26,7 +26,7 @@ function Skills() {
             
           </div>
       </div>
-    </div>
+    </section>
   );
 }
 

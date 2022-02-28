@@ -6,7 +6,8 @@ import About from '../components/sections/About'
 import Resume from '../components/sections/Resume'
 import Skills from '../components/sections/Skills'
 import ContactMe from '../components/sections/ContactMe'
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/layout/Footer'
+import Main from '../components/layout/Main'
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='w-auto  bg-green-500  mb-4 '>
+      <header className='w-auto h-full justify-center bg-green-500   '>
         <TopBar />
       </header>
-      <main className='w-full py-12'>
+      <Main className='w-full py-12'>
         <Intro />
         <About />
         <div className='items-center'>
@@ -29,7 +30,7 @@ export default function Home() {
         <Skills />
         <ContactMe />
 
-      </main>
+      </Main>
 
       <footer className={styles.footer}>
           <Footer />
