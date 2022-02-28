@@ -37,25 +37,25 @@ function Resume() {
   }
 
   const resumeList = [
-    { label: 'Education', logoSrc: "" },
-    { label: 'Work-History', logoSrc: "" },
-    { label: 'Programming-skills', logoSrc: "" },
-    { label: 'Projects', logoSrc: "" },
-    { label: 'Interests', logoSrc: "" },
+    { label: 'Front-End', logoSrc: "" },
+    { label: 'Back-End', logoSrc: "" },
+    { label: 'Databases', logoSrc: "" },
+    { label: 'Security', logoSrc: "" },
+    { label: 'Others', logoSrc: "" },
   ]
 
   const programmigSkillsDetails = [
-    { skill: 'Javascript', rate: 85 },
-    { skill: 'Python', rate: 75 },
-    { skill: 'React JS', rate: 85 },
-    { skill: 'Node JS', rate: 85 },
-    { skill: 'MogonDB', rate: 85 },
-    { skill: 'Express', rate: 85 },
+    { skill: 'MongoDB', rate: 85 },
+    { skill: 'MySQL', rate: 75 },
+    { skill: 'Oracle', rate: 85 },
+    { skill: 'PostgreSQL', rate: 85 },
+    { skill: 'Firebase', rate: 85 },
+    
 
   ]
   const projectDetails = [
     {
-      title: 'Personal website Portfolio',
+      title: 'ELK stack SIEM ',
       duration: { fromDate: '2021', toDate: "2022" },
       description: "Wreating My personel portfolio unsing React JS",
       subHeading: "Personal portfolio"
@@ -72,12 +72,7 @@ function Resume() {
       description: "Writing My personel portfolio unsing React JS",
       subHeading: "Personal portfolio"
     },
-    {
-      title: 'Internal website for publishing news',
-      duration: { fromDate: '2021', toDate: "2022" },
-      description: "Writing My personel portfolio unsing React JS",
-      subHeading: "Personal portfolio"
-    },
+  
   ]
   const interestDetails = [
     {heading: "Tennis", description: "I loe tennis"},
@@ -88,21 +83,21 @@ function Resume() {
   ]
   const resumeDetails = [
 
-    <div className=' w-full' key="education">
+    <div className=' w-full' key="Front-End">
       <ResumeHeading
-        heading={"USTHB"}
+        heading={"React JS"}
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
       />
       <ResumeHeading
-        heading={"USTHB"}
+        heading={"Next JS"}
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
       />
       <ResumeHeading
-        heading={"USTHB"}
+        heading={"Tailwinds css"}
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
@@ -110,10 +105,24 @@ function Resume() {
     </div>,
     <div className='' key='work-experience'>
       <ResumeHeading
-        heading={"Public Sector"}
-        subHeading={"SOC Analyst"}
+        heading={"Node Js "}
+        subHeading={"Data Analyst"}
         fromDate={"2020"}
         toDate={"2021"}
+        description={"This is the description of the job experience details"}
+      />
+      <ResumeHeading
+        heading={"Express Js "}
+        subHeading={"Data Analyst"}
+        fromDate={"2020"}
+        toDate={"2021"}
+        description={"This is the description of the job experience details"}
+      />
+      <ResumeHeading
+        heading={"Djanog Rest API"}
+        subHeading={"Data Analyst"}
+        fromDate={"80"}
+        toDate={"%"}
         description={"This is the description of the job experience details"}
       />
       
@@ -197,9 +206,9 @@ const handleCarousel = (index) =>{
 
 
   return (
-    <div className='justify-center flex flex-col'>
+    <section id='Skills' className='justify-center flex flex-col'>
       <div className=" flex flex-col items-center text-slate-800   ">
-        <span className=" text-6xl font-medium text-blx-900">Resume</span>
+        <span className=" text-6xl font-medium text-blx-900">Skills</span>
         <span className=" text-xl text-gray-600 font-sans text-center mt-5">
           My formal Bio Details
         </span>
@@ -224,7 +233,7 @@ const handleCarousel = (index) =>{
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
