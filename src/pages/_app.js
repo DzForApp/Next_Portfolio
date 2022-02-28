@@ -1,4 +1,4 @@
-import '/home/radwan/Documents/DEV/JavaScript/Next_JS/portfolio_next/styles/globals.css'
+import '../../styles/globals.css'
 
 
 function MyApp({ Component, pageProps }) {

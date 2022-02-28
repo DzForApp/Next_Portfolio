@@ -1,13 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
-import TopBar from '../layout/TopBar'
+import Image from 'next/image' 
 import FaceIcon from '../icons/FaceIcon'
 import ButtonHire from '../commun/ButtonHire'
 import ButtonResume from '../commun/ButtonResume'
 import TwitIcon from '../icons/TwitIcon'
 import LinkedIcond from '../icons/LinkedIcon'
 import TelegIcon from '../icons/TelegIcon'
-import Github from '../icons/GitIcon'
 import GitIcon from '../icons/GitIcon'
 
 export default function Intro() {
