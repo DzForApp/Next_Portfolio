@@ -43,7 +43,7 @@ export default function Intro() {
                     </div>
                     <div className='w-96 h-96 bg-orange-500 rounded-full'>
                         <span className="">
-                            <Image src="/../public/Me.png" alt="Vercel Logo" width={380} height={470} />
+                            <Image src="/Me.png" alt="Vercel Logo" width={380} height={470} />
                         </span>
                     </div>
                 </div>
