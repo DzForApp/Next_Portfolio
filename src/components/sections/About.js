@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react';
 import ButtonResume from '../commun/ButtonResume';
 import ButtonHire from '../commun/ButtonHire';
@@ -19,7 +20,7 @@ function About() {
       <div className="flex my-12   relative justify-center">
         <div className="w-128 h-146 shadow-2xl shadow-slate-800 flex items-center pl-0">
           <div className=" w-1/2 ml-0 h-full bg-transparent  flex-shrink-0 self-center ">
-             <img  src={Devloper} alt="" />
+             <Image  src={Devloper} alt="" />
           </div>
 
           <div className=" w-7rem h-3rem bg-gray-300 flex flex-col space-y-6   self-center ">
