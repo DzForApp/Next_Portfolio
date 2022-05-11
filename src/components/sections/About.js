@@ -18,7 +18,7 @@ function About() {
 
 
       <div className="flex my-12   relative justify-center">
-        <div className="w-128 h-146 shadow-2xl shadow-slate-800 flex items-center pl-0">
+        <div className="w-7rem h-146 shadow-2xl shadow-slate-800 flex items-center pl-0">
           <div className=" w-1/2 ml-0 h-full bg-transparent  flex-shrink-0 self-center ">
              <Image  src={Devloper} alt="" />
           </div>
