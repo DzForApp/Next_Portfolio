@@ -3,9 +3,8 @@ import styles from '../../styles/Home.module.css'
 import TopBar from '../components/layout/TopBar'
 import Intro from '../components/sections/Intro'
 import About from '../components/sections/About'
-import Resume from '../components/sections/Resume'
-import Skills from '../components/sections/Skills'
-import ContactMe from '../components/sections/ContactMe'
+import Works from '../components/sections/Works'
+import Skills from '../components/sections/Skills' 
 import Footer from '../components/layout/Footer'
 import Main from '../components/layout/Main'
 
@@ -24,11 +23,11 @@ export default function Home() {
       <Main className='w-full py-12'>
         <Intro />
         <About />
-        <div className='items-center'>
-          <Resume />
+        <div  >
+          <Skills />
         </div>
-        <Skills />
-        <ContactMe />
+        <Works />
+     
 
       </Main>
 
