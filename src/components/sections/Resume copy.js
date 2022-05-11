@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import FaceIcon from '../icons/FaceIcon' 
+import Me from '../../../public/Me.png' 
+import Image from 'next/image'
+
 
 function Resume() {
 
@@ -13,10 +15,14 @@ function Resume() {
     setItem(true)
   }
   const [menu, setMenu] = useState(false)
+   
 
   const ResumeHeading = (props) => {
     return(
     <div className='w-250 h-146  mb-6 shadow-lg'>
+       <div style={{ position: 'relative', width: '50px', height: '50px' }}>
+      <Image alt="Mountains" src={Me} layout="fill" objectFit="cover" width={50} height={50} />
+    </div>
       <div className='flex justify-between'>
         <span className='text-2xl '>{props.heading ? props.heading : ''}</span>
         {props.fromDate && props.toDate ? (
@@ -39,9 +45,8 @@ function Resume() {
   const resumeList = [
     { label: 'Front-End', logoSrc: "" },
     { label: 'Back-End', logoSrc: "" },
-    { label: 'Databases', logoSrc: "" },
-    { label: 'Security', logoSrc: "" },
-    { label: 'Others', logoSrc: "" },
+    { label: 'Styles', logoSrc: "" },
+    { label: 'Databases', logoSrc: "" }, 
   ]
 
   const programmigSkillsDetails = [
@@ -53,27 +58,7 @@ function Resume() {
     
 
   ]
-  const projectDetails = [
-    {
-      title: 'ELK stack SIEM ',
-      duration: { fromDate: '2021', toDate: "2022" },
-      description: "Wreating My personel portfolio unsing React JS",
-      subHeading: "Personal portfolio"
-    },
-    {
-      title: 'Car Management',
-      duration: { fromDate: '2021', toDate: "2022" },
-      description: "Wreating My personel portfolio unsing React JS",
-      subHeading: "Personal portfolio"
-    },
-    {
-      title: 'School Management System',
-      duration: { fromDate: '2021', toDate: "2022" },
-      description: "Writing My personel portfolio unsing React JS",
-      subHeading: "Personal portfolio"
-    },
   
-  ]
   const interestDetails = [
     {heading: "Tennis", description: "I loe tennis"},
     {heading: "Video Game", description: "I loe Video Games"},
@@ -89,18 +74,23 @@ function Resume() {
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
+        logoSrc={Me}
       />
       <ResumeHeading
         heading={"Next JS"}
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
+        
+
       />
       <ResumeHeading
         heading={"Tailwinds css"}
         subHeading={"Computer Science Faculty"}
         fromDate={"2016"}
         toDate={"2019"}
+        
+
       />
     </div>,
     <div className='' key='work-experience'>
@@ -110,7 +100,8 @@ function Resume() {
         fromDate={"2020"}
         toDate={"2021"}
         description={"This is the description of the job experience details"}
-      />
+              />
+      
       <ResumeHeading
         heading={"Express Js "}
         subHeading={"Data Analyst"}
@@ -137,20 +128,7 @@ function Resume() {
         ))}
       </div>
     </div>,
-    <div className='w-full  ' key='projects'>
-      <div>
-        {projectDetails.map((project, index) =>
-          <ResumeHeading
-            key={index}
-            heading={project.title}
-            subHeading={project.subHeading}
-            description={project.description}
-            fromDate={project.duration.fromDate}
-            toDate={project.duration.toDate}
-          />
-        )}
-      </div>
-    </div>,
+     
     <div className='' key='interests'>
     <div>
       {interestDetails.map((interest, index) =>
