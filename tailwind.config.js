@@ -10,6 +10,10 @@ module.exports = {
       },
       height: {
         '3rem': '35rem'
+      },
+      colors: {
+        'rdn-yellow' : '#fcc603',
+
       }
     },
   },

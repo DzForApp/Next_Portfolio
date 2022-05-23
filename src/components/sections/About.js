@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import React from 'react';
-import ButtonResume from '../commun/ButtonResume';
-import ButtonHire from '../commun/ButtonHire';
+import React from 'react'; 
 import ItemEnum from '../icons/ItemEnum';  
 import Devloper from '/public/devloper.png'
 
@@ -36,27 +34,27 @@ function About() {
               </span>
               <ul className='mt-2 pl-6 space-y-2 font-light'>
                 <li className='flex gap-6'>
-                  <ItemEnum className='w-4 h-4 bg-orange-600' />
+                  <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> Full Stack web and mobile development</span>
                 </li>
-                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-orange-600' />
+                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> Interactive Front End as per the design</span>
                 </li>
-                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-orange-600' />
+                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> React and React Native</span>
                 </li>
-                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-orange-600' />
+                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> Redux Toolkit for State Mnanagement</span>
                 </li>
-                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-orange-600' />
+                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> Building REST API</span></li>
-                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-orange-600' />
+                <li className='flex gap-6'> <ItemEnum className='w-4 h-4 bg-rdn-yellow' />
                   <span> Managing database</span></li>
               </ul>
             </div>
             <div className='flex space-x-16 pl-16 '>
              
-              <button className="h-12 w-32 bg-orange-600 text-white rounded-xl ">Konw More</button > 
+              <button className="h-12 w-32 bg-rdn-yellow text-black rounded-xl ">Konw More</button > 
             </div>
           </div>
 
