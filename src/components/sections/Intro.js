@@ -22,7 +22,7 @@ export default function Intro() {
                         <div className=' w-full space-y-8  text-center justify-items-center'>
                         
                             <div className='flex flex-col text-left ml-0 space-y-4 w-96 text-6xl'>
-                                <p className='text-blue-900 '>Full Stack</p>
+                                <p className='text-rdn-yellow '>Full Stack</p>
                                 <p className='text-slate-900' >Web</p>
                                 <p> Devloper</p>
                             </div>
@@ -31,13 +31,13 @@ export default function Intro() {
                             </div>
                             <div className='flex space-x-16 mt-16 pb-32'>
                        
-                            <button className="h-16 w-64 bg-orange-600 text-white  border-0 font-sans rounded-xl">Contact me</button>
+                            <button className="h-auto w-auto p-2 items-center bg-rdn-yellow text-2xl text-slate-800  border-0 font-sans rounded-xl">Contact me</button>
                         </div>
                         </div>
                         
                     </div>
-                    <div className='w-96 h-96 bg-orange-500 rounded-full'>
-                        <span className='-flex '>
+                    <div className='w-96 h-96 bg-rdn-yellow opacity-90 rounded-full'>
+                        <span className='flex  '>
                             <Image src="/Me.png" alt="Vercel Logo" width={380} height={470} />
                         </span>
                     </div>

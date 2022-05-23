@@ -5,7 +5,8 @@ import NodeIcon from '../icons/NodeIcon';
 import DjangoIcon from '../icons/DjangoIcon';
 import FireBaseIcon from '../icons/FirebaseIcon';
 import MongoDbIcon from '../icons/MongoDBIcon';
-import NextIcon from '../icons/NextIcon'
+import NextIcon from '../icons/NextIcon';
+import TailwindIcon from '../icons/TailwondIcon';
 
 function Resume() {
 
@@ -52,6 +53,10 @@ function Resume() {
       <Skill title="MongoDB" brief="I have three years of experience with React. I use it to build Frontend Web apps and i love it.." 
         className="border-2 border-green-500">
         <MongoDbIcon className="w-40 h-40" /> 
+      </Skill>
+      <Skill title="Tailwind Css" brief="I have three years of experience with React. I use it to build Frontend Web apps and i love it.." 
+        className="border-2 border-green-500">
+        <TailwindIcon className="w-40 h-40" /> 
       </Skill>
       </div>
     </section>

@@ -25,10 +25,10 @@ export default function TopBar () {
 
 
   return (
-    <nav className="fixed top-0 z-0 flex px-4 w-full h-16 bg-gradient-to-r from-slate-400 to-red-400 items-center justify-between ">
+    <nav className="fixed top-0 z-0 flex px-4 w-full h-16 bg-gradient-to-r bg-rdn-yellow items-center justify-between ">
       <div className="flex space-x-2">
         <p className='text-2xl  text-dark left-0 font-bold hover:text-gray-900'><a href='#Home'>
-           Reda Azer</a>
+           Red AzerX</a>
           </p>
       </div>
       <nav className='flex flex-row  justify-center'>
