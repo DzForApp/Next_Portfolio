@@ -7,7 +7,7 @@ const Sample = ({ title, brief, img, duration, demo_link, github_link, children,
     return (
         <div className={`${className} flex flex-col rounded-lg items-center px-4 mx-4 w-60`}>
             <div>
-                <img  className="w-full h-40" src={img} alt="" />
+                <image  className="w-full h-40" src={img} alt="" />
             </div>
             <h1>{title}</h1>
             <p>{brief}</p>
