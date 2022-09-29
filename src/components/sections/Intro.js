@@ -1,53 +1,51 @@
-import React from 'react'
-import Image from 'next/image' 
-import FaceIcon from '../icons/FaceIcon'
-import ButtonHire from '../commun/ButtonHire'
-import ButtonResume from '../commun/ButtonResume'
-import TwitIcon from '../icons/TwitIcon'
-import LinkedIcond from '../icons/LinkedIcon'
-import TelegIcon from '../icons/TelegIcon'
-import GitIcon from '../icons/GitIcon'
+import React from "react";
+import Image from "next/image";
+import FaceIcon from "../icons/FaceIcon";
+import ButtonHire from "../commun/ButtonHire";
+import ButtonResume from "../commun/ButtonResume";
+import TwitIcon from "../icons/TwitIcon";
+import LinkedIcond from "../icons/LinkedIcon";
+import TelegIcon from "../icons/TelegIcon";
+import GitIcon from "../icons/GitIcon";
 
 export default function Intro() {
-    return (
-          <section id="Home" className="flex h-screen lg:flex-row lg:space-y-0 space-y-8 flex-col items-center justify-center pt-28 ">
-
-
-            <div className=" flex-col items-center h-160  flex justify-center space-x-16 ">
-                <div className='w-full '>
-
+  return (
+    <section
+      id="Home"
+      className="flex md:flex-row md:space-y-6  md:h-screen space-y-8 flex-col items-center justify-center  p-6 "
+    >
+      <div className=" flex-col  items-center h-160 top-0 flex justify-center space-x-16  ">
+        <div className="flex flex-col md:flex-row text-center ">
+          <div className="flex flex-col justify-center items-center  h-full text-4xl  ">
+            <div className=" w-full h-full flex flex-col md:flex-row space-y-2 md:space-x-32 justify-start p-6 items-center">
+              <div className="flex flex-col space-y-4 justify-center items-center">
+                {" "}
+                <div className="flex flex-col text-center  space-y-1 w-auto text-4xl md:text-6xl">
+                  <p className=" text-rdn-yellow font-semibold ">
+                    F u l l S t a c k
+                  </p>
+                  <p className="text-slate-900">Web Developer</p>
                 </div>
-                <div className='flex flex-row text-center '>
-                    <div className='flex flex-col justify-center pb-0 items-center  h-full text-4xl  '>
-                        <div className=' w-full space-y-8  text-center justify-items-center'>
-                        
-                            <div className='flex flex-col text-left ml-0 space-y-4 w-96 text-6xl'>
-                                <p className='text-rdn-yellow '>Full Stack</p>
-                                <p className='text-slate-900' >Web</p>
-                                <p> Devloper</p>
-                            </div>
-                            <div className='text-slate-900 text-2xl text-left'>
-                                <p>I am familiar with React, NextJs, TailWind for the Frontend. <br /> And Express, NestJs or Firebase for the backend.</p>
-                            </div>
-                            <div className='flex space-x-16 mt-16 pb-32'>
-                       
-                            <button className="h-auto w-auto p-2 items-center bg-rdn-yellow text-2xl text-slate-800  border-0 font-sans rounded-xl">Contact me</button>
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div className='w-96 h-96 bg-rdn-yellow opacity-90 rounded-full'>
-                        <span className='flex  '>
-                            <Image src="/Me.png" alt="Vercel Logo" width={380} height={470} />
-                        </span>
-                    </div>
+                <div className=" text-slate-900 w-2/3 md:w-96   text-center text-lg md:text-2xl font-sans">
+                  <p>
+                    I am familiar with React, NextJs, TailWind for the Frontend.{" "}
+                    <br /> And Express, NestJs or Firebase for the backend.
+                  </p>
                 </div>
+              </div>
+              <div className=" w-96 h-96  bg-rdn-yellow items-center justify-center  rounded-full">
+                <Image
+                  src="/Me.png"
+                  alt="Vercel Logo"
+                  width={340}
+                  height={430}
+                />
+              </div>
             </div>
-            <div className='items-center'>
-
-            </div>
-
-        </section>
-    )
-
+          </div>
+        </div>
+      </div>
+      <div className="items-center"></div>
+    </section>
+  );
 }
