@@ -1,12 +1,13 @@
-import Head from 'next/head' 
-import styles from '../../styles/Home.module.css'
-import TopBar from '../components/layout/TopBar'
-import Intro from '../components/sections/Intro'
-import About from '../components/sections/About'
-import Works from '../components/sections/Works'
-import Skills from '../components/sections/Skills' 
-import Footer from '../components/layout/Footer'
-import Main from '../components/layout/Main'
+import Head from "next/head";
+import styles from "../../styles/Home.module.css";
+import TopBar from "../components/layout/TopBar";
+import Intro from "../components/sections/Intro";
+import About from "../components/sections/About";
+import Works from "../components/sections/Works";
+import Skills from "../components/sections/Skills";
+import ContactMe from "../components/sections/ContactMe";
+import Footer from "../components/layout/Footer";
+import Main from "../components/layout/Main";
 
 export default function Home() {
   return (
@@ -17,24 +18,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='w-auto h-full justify-center   '>
+      <header className="w-auto h-full justify-center   ">
         <TopBar />
       </header>
-      <Main className='w-full py-12'>
+      <Main className="w-full py-8">
         <Intro />
         <About />
-        <div  >
+        <div>
           <Skills />
         </div>
         <Works />
-     
-
+        <ContactMe />
       </Main>
 
       <footer className={styles.footer}>
-          <Footer />
-       
+        <Footer />
       </footer>
     </div>
-  )
+  );
 }
