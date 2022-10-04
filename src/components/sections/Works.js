@@ -3,8 +3,8 @@ import Sample from "../content/Sample";
 
 function Skills() {
   return (
-    <section id="Latest_Work">
-      <div className=" flex flex-col items-center  justify-center ">
+    <section id="Latest_Work" className="relative h-screen mt-16">
+      <div className="flex flex-col items-center h-48 bg-green-200 justify-end ">
         <span className=" text-4xl md:text-6xl font-medium text-blx-900">
           Latest Work
         </span>
@@ -13,7 +13,7 @@ function Skills() {
         </span>
       </div>
 
-      <div className="flex flex-wrap justify-center text-xs overflow-x-auto w-full px-4 py-16">
+      <div className="flex flex-wrap justify-center text-xs overflow-x-auto w-full px-4 py-16 bg-red-300">
         <Sample
           className=" border-2 border-gray-500"
           title="Food Delivery Service"

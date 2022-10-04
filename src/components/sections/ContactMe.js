@@ -10,7 +10,7 @@ function ContactMe() {
   return (
     <section
       id="Contact_me"
-      className="flex flex-col md:space-y-6 w-full h-full space-y-8  items-center justify-center  "
+      className="  flex flex-col md:space-y-6 w-full    items-center justify-  "
     >
       <div className="w-full md:w-1/2">
         <div className="w-full h-full flex flex-col items-center  ">
@@ -22,7 +22,7 @@ function ContactMe() {
           </span>
         </div>
 
-        <div className="  flex flex-col px-2 w-full h-full py-4 pl-1 rounded-xl shadow-xl bg-rdn-yellow  items-center ">
+        <div className="  flex flex-col px-2 w-full h-full py-1 pl-1 rounded-xl shadow-xl bg-rdn-yellow  items-center ">
           <div className=" w-auto h-full bg-rdn-yellow items-center justify-center text-white  ">
             <div className="flex flex-col items-center ">
               {" "}

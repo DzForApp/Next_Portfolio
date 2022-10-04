@@ -12,7 +12,7 @@ export default function Intro() {
   return (
     <section
       id="Home"
-      className="flex md:flex-row md:space-y-6  md:h-screen space-y-8 flex-col items-center justify-center  p-6 "
+      className="flex md:flex-row md:space-y-6  md:h-screen space-y-8 flex-col items-center justify-center  p-6 mb-32 "
     >
       <div className=" flex-col  items-center h-160 top-0 flex justify-center space-x-16  ">
         <div className="flex flex-col md:flex-row text-center ">
@@ -21,10 +21,10 @@ export default function Intro() {
               <div className="flex flex-col space-y-4 justify-center items-center">
                 {" "}
                 <div className="flex flex-col text-center  space-y-1 w-auto text-4xl md:text-6xl">
-                  <p className=" text-rdn-yellow font-semibold ">
-                    F u l l S t a c k
+                  <p className="text-slate-900 font-semibold ">
+                    F r o n t e n d
                   </p>
-                  <p className="text-slate-900">Web Developer</p>
+                  <p className="text-rdn-yellow ">Web Developer</p>
                 </div>
                 <div className=" text-slate-900 w-2/3 md:w-96   text-center text-lg md:text-2xl font-sans">
                   <p>

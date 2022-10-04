@@ -20,8 +20,11 @@ function Resume() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <section id="Skills" className="justify-center flex flex-col">
-      <div className=" flex flex-col items-center text-slate-800   ">
+    <section
+      id="Skills"
+      className="relative h-screnn justify-center flex flex-col"
+    >
+      <div className=" flex flex-col items-center h-32 bg-red-200 justify-end  text-slate-800   ">
         <span className=" text-4xl md:text-6xl font-medium text-blx-900">
           My skills
         </span>

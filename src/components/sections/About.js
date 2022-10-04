@@ -7,7 +7,7 @@ function About() {
   return (
     <section
       id="About_me"
-      className="flex md:flex-row md:space-y-6  h-full space-y-8 flex-col items-center justify-center   "
+      className=" relative flex md:flex-row md:space-y-6 md:h-screen space-y-8 flex-col items-center justify-center   "
     >
       <div className="w-full h-full py-4 md:w-8rem transition-all flex flex-col md:flex-row space-y-6 justify-center items-center ">
         {/* Part 01 About me */}
