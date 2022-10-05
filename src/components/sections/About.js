@@ -7,13 +7,13 @@ function About() {
   return (
     <section
       id="About_me"
-      className=" relative flex md:flex-row md:space-y-6 md:h-screen space-y-8 flex-col items-center justify-center   "
+      className=" relative  flex md:flex-row md:space-y-6 md:h-screen space-y-8 flex-col items-center justify-center   "
     >
       <div className="w-full h-full py-4 md:w-8rem transition-all flex flex-col md:flex-row space-y-6 justify-center items-center ">
         {/* Part 01 About me */}
-        <div className="flex flex-col md:w-1/2 text-center space-y-8 justify-center items-center">
-          <div className=" flex flex-col items-center ">
-            <span className=" text-4xl md:text-6xl font-medium text-blx-900">
+        <div className="flex flex-col md:w-1/2  text-center space-y-8 justify-center items-center">
+          <div className="w-full flex flex-col items-center  ">
+            <span className=" text-4xl md:text-6xl  font-medium text-blx-900">
               About Me
             </span>
             <span className=" md:text-2xl text-gray-600 font-sans text-center mt-5">
