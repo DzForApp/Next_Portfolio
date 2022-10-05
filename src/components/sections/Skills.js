@@ -20,8 +20,11 @@ function Resume() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <section id="Skills" className="justify-center flex flex-col">
-      <div className=" flex flex-col items-center text-slate-800   ">
+    <section
+      id="Skills"
+      className="relative  flex md:flex-col md:space-y-6 md:h-full space-y-8 flex-col items-center justify-center   "
+    >
+      <div className=" flex flex-col md:mt-16 items-center  bg-gren-200 justify-center  text-slate-800   ">
         <span className=" text-4xl md:text-6xl font-medium text-blx-900">
           My skills
         </span>
@@ -30,7 +33,7 @@ function Resume() {
         <Skill
           title="React"
           brief="I have three years of experience with React. I use it to build Frontend Web apps and i love it.."
-          className="border-2 border-blue-300"
+          className="border-2 border-blue-300 "
         >
           <ReactIcon className="w-40 h-40" />
         </Skill>

@@ -3,8 +3,11 @@ import Sample from "../content/Sample";
 
 function Skills() {
   return (
-    <section id="Latest_Work">
-      <div className=" flex flex-col items-center  justify-center ">
+    <section
+      id="Latest_Work"
+      className="relative   flex md:flex-col md:space-y-6 md:h-full space-y-8 flex-col items-center justify-center   "
+    >
+      <div className="flex flex-col items-center   md:h-full  md:mt-16  ">
         <span className=" text-4xl md:text-6xl font-medium text-blx-900">
           Latest Work
         </span>
@@ -13,7 +16,7 @@ function Skills() {
         </span>
       </div>
 
-      <div className="flex flex-wrap justify-center text-xs overflow-x-auto w-full px-4 py-16">
+      <div className=" flex flex-wrap justify-center space-y-4 text-xs overflow-x-auto w-full px-4 py-16 ">
         <Sample
           className=" border-2 border-gray-500"
           title="Food Delivery Service"
@@ -45,7 +48,7 @@ function Skills() {
           title="ToDo App online Service"
           brief="ToDo app online service, you can access using [rdn, script] as creidentials"
           duration="12 days"
-          img="/media/todo.png"
+          img="/media/vpn.jpg"
           github_link="https://github.com/DzForApp/ToDo"
           demo_link="https://todo-737.herokuapp.com/"
         >
