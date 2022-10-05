@@ -10,9 +10,9 @@ function ContactMe() {
   return (
     <section
       id="Contact_me"
-      className="  flex flex-col md:space-y-6 w-full    items-center justify-  "
+      className="relative   flex md:flex-col md:space-y-6 px-8 py-16 md:h-full space-y-8 flex-col items-center justify-center   "
     >
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 ">
         <div className="w-full h-full flex flex-col items-center  ">
           <span className=" text-4xl md:text-6xl font-medium text-blx-900">
             ContactMe
