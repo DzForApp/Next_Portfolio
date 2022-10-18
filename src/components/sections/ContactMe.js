@@ -3,9 +3,18 @@ import InputItem from "../commun/InputItem";
 import FaceIcon from "../icons/FaceIcon";
 import GitIcon from "../icons/GitIcon";
 import LinkedIcon from "../icons/LinkedIcon";
+import { useForm } from "react-hook-form";
 
 function ContactMe() {
   const [menu, setMenu] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
 
   return (
     <section
@@ -22,7 +31,10 @@ function ContactMe() {
           </span>
         </div>
 
-        <div className="  flex flex-col px-2 w-full h-full py-1 pl-1 rounded-xl shadow-xl bg-rdn-yellow  items-center ">
+        <form
+          onSubmit={(handleSubmit, onSubmit)}
+          className="  flex flex-col px-2 w-full h-full py-1 pl-1 rounded-xl shadow-xl bg-rdn-yellow  items-center "
+        >
           <div className=" w-auto h-full bg-rdn-yellow items-center justify-center text-white  ">
             <div className="flex flex-col items-center ">
               {" "}
@@ -37,9 +49,15 @@ function ContactMe() {
 
           <div className=" w-full m-6 h-5/6 bg-transparent items-center flex flex-col rounded-2xl flex-shrink-0 self-center ">
             <div className="flex flex-col  w-5/6 md:w-2/3 space-y-4 p-2">
-              <InputItem title="Name" />
+              <input
+                type="text"
+                defaultValue="Your Name"
+                {...register("Name")}
+              />
+              <input type="email" {...register("email", { required: true })} />
+              {/* <InputItem title="Name" />
               <InputItem title="Email" />
-              <InputItem title="Message" />
+              <InputItem title="Message" /> */}
             </div>
           </div>
           <div className="md:px-6 px-4 md:py-3 py-2 md:flex rounded-2xl  bg-slate-800">
@@ -47,7 +65,7 @@ function ContactMe() {
               Contact me
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   );

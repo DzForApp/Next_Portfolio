@@ -27,7 +27,7 @@ const Sample = ({
         <span>{duration}</span>
       </div>
       <div className="flex">{children}</div>
-      <div className="flex">
+      <div className="flex space-x-4">
         <a href={github_link}>
           <GitIcon className="w-4 h-4" />
         </a>

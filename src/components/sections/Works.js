@@ -110,6 +110,52 @@ function Skills() {
             Ci-Cd
           </span>
         </Sample>
+        <Sample
+          className="border-2 border-gray-300"
+          title="Portfolio"
+          brief="Virtual Private Network service website based on given figma design."
+          duration="30 days"
+          img="/Me.png"
+          github_link="https://github.com/DzForApp/Next_Portfolio"
+          demo_link="/"
+        >
+          <span className="p-1 rounded-lg bg-gray-200 text-gray-600 m-1">
+            {" "}
+            NextJS
+          </span>
+
+          <span className="p-1 rounded-lg bg-red-200 text-red-600 m-1">
+            {" "}
+            Tailwind css
+          </span>
+          <span className="p-1 rounded-lg bg-green-200 text-green-600 m-1">
+            {" "}
+            Ci-Cd
+          </span>
+        </Sample>
+        <Sample
+          className="border-2 border-gray-300"
+          title="Netflix Clone"
+          brief="Watch Netflix movies & TV shows online or stream right to your smart."
+          duration="20 days"
+          img="https://i.pinimg.com/originals/f6/97/4e/f6974e017d3f6196c4cbe284ee3eaf4e.png"
+          github_link="https://github.com/DzForApp/Next_Portfolio"
+          demo_link="/"
+        >
+          <span className="p-1 rounded-lg bg-gray-200 text-gray-600 m-1">
+            {" "}
+            NextJS
+          </span>
+
+          <span className="p-1 rounded-lg bg-red-200 text-red-600 m-1">
+            {" "}
+            Tailwind css
+          </span>
+          <span className="p-1 rounded-lg bg-green-200 text-green-600 m-1">
+            {" "}
+            Ci-Cd
+          </span>
+        </Sample>
       </div>
     </section>
   );

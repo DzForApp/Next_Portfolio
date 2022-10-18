@@ -22,12 +22,12 @@ const MenuIcon = ({ menuOpen }) => (
 );
 
 export default function TopBar() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = sections.map((section) => (
     <a
       key={section}
       href={`#${section.replace(" ", "_")}`}
-      className="hidden md:flex md:text-dark md:text-xl  no-underline transition-all space-x-4 mx-6 font-semibold hover:text-gray-600"
+      className="hidden md:flex md:text-dark md:text-sm lg:text-xl  no-underline transition-all space-x-4 mx-6 font-semibold hover:text-gray-600"
       onClick={() => setMenuOpen(!menuOpen)}
     >
       {section}
@@ -35,13 +35,13 @@ export default function TopBar() {
   ));
 
   return (
-    <nav className="fixed top-0 z-50 flex px-2 w-full h-16 bg-gradient-to-r bg-rdn-yellow items-center justify-between ">
+    <nav className="fixed top-0 z-40  flex px-2 w-full h-16 bg-gradient-to-r bg-rdn-yellow items-center justify-between ">
       <div className="flex space-x-2">
         <p className="text-2xl  text-dark left-0 font-bold hover:text-gray-900">
           <a href="#Home">Kubertos DevX</a>
         </p>
       </div>
-      <nav className="flex flex-row  justify-center ">{navLinks}</nav>
+      <nav className="flex flex-row   justify-center ">{navLinks}</nav>
       <div className="flex space-x-2 justify-center items-center">
         <MySocialLinks />
         <button
@@ -50,7 +50,7 @@ export default function TopBar() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="rounded bg-orange-200 rotate-90 md:hidden focus:outline-none focus:ring-green-800 focus:ring-opacity-50"
         >
-          <MenuIcon menuOpen={menuOpen} />
+          <MenuIcon menuOpen={!menuOpen} />
         </button>
       </div>
     </nav>
